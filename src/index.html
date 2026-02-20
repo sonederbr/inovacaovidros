@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="ocean">
+<head>
+  <!-- ============ META BÁSICO / SEO ============ -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Inovação Vidros — Box de Banheiro: Manutenção, Venda e Instalação</title>
+  <meta name="description" content="Box de banheiro com instalação profissional, manutenção rápida e peças originais. Há mais de 10 anos atendendo com qualidade e segurança em Sorocaba e região. Peça seu orçamento no WhatsApp.">
+  <link rel="canonical" href="https://inovacaovidros.com.br/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0b5d69">
+
+  <!-- ============ OPEN GRAPH / TWITTER ============ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inovação Vidros">
+  <meta property="og:title" content="Box de Banheiro: Manutenção, Venda e Instalação">
+  <meta property="og:description" content="Há mais de 10 anos no mercado. Solicite orçamento imediato pelo WhatsApp.">
+  <meta property="og:url" content="https://inovacaovidros.com.br/">
+  <meta property="og:image" content="https://inovacaovidros.com.br/assets/og-cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ======= PREFETCH/CONNECTION HINTS (leve) ======= -->
+  <link rel="dns-prefetch" href="//wa.me">
+  <link rel="preconnect" href="https://wa.me" crossorigin>
+
+  <!-- ============ CSS CRÍTICO (com paletas) ============ -->
+  <style>
+    /* =======================
+       PALETAS (DEV ONLY)
+       Altere o atributo data-theme na <html> para: ocean | emerald | sunset | graphite
+       ======================= */
+    :root{
+      --bg: #ffffff; --text:#132024; --muted:#5f7b82; --brand:#0b5d69; --brand-2:#10a6b5; --ok:#1a9c63; --warn:#c97a00; --card:#f5fbfc; --line:#e6f1f3;
+    }
+    html[data-theme="emerald"]{ --bg:#ffffff; --text:#0d1c15; --muted:#4a6b5b; --brand:#106b44; --brand-2:#14b06c; --ok:#108a56; --warn:#b26b00; --card:#f4fbf7; --line:#e6f2ea; }
+    html[data-theme="sunset"]{ --bg:#ffffff; --text:#201513; --muted:#7a5b54; --brand:#b94a2c; --brand-2:#e76f51; --ok:#c0502f; --warn:#b26b00; --card:#fff7f4; --line:#f5e9e5; }
+    html[data-theme="graphite"]{ --bg:#0f1214; --text:#f3f6f7; --muted:#99abb0; --brand:#3fb3c0; --brand-2:#61d0dc; --ok:#14b06c; --warn:#f2a23a; --card:#151a1d; --line:#232b2f; }
+
+    /* ===== Base ===== */
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;background:var(--bg);color:var(--text)}
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--brand);text-decoration:none}
+    .container{width:min(1160px,92vw);margin:0 auto}
+    .grid{display:grid;gap:1.25rem}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--brand);color:#fff;padding:.9rem 1.25rem;border-radius:.6rem;font-weight:600;border:none}
+    .btn:hover{background:var(--brand-2)}
+    .pill{display:inline-block;background:var(--card);border:1px solid var(--line);color:var(--muted);padding:.25rem .6rem;border-radius:999px;font-size:.85rem}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:1.2rem}
+    .muted{color:var(--muted)}
+    .section{padding:56px 0}
+    h1,h2{line-height:1.2;margin:.3rem 0 .8rem}
+    h1{font-size:clamp(1.9rem,3.2vw,3rem)}
+    h2{font-size:clamp(1.4rem,2.2vw,2rem)}
+    ul{margin:0 0 0 1.25rem;padding:0}
+    /* ===== Header ===== */
+    header{position:sticky;top:0;background:color-mix(in oklab,var(--bg),transparent 5%);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}
+    .brand img{width:42px;height:42px;border-radius:.4rem}
+    .brand strong{font-size:1.05rem}
+    .cta{display:flex;gap:.6rem}
+    /* ===== Hero ===== */
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center}
+    .hero .tag{margin-bottom:.4rem}
+    .hero p{margin:.6rem 0 1rem}
+    .hero .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.6rem}
+    .hero-picture{position:relative;border-radius:.9rem;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg, color-mix(in oklab,var(--brand),#fff 85%), var(--card))}
+    .hero-picture img{object-fit:cover;aspect-ratio:4/3;width:100%;height:100%}
+    /* ===== Serviços ===== */
+    .services{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .service h3{margin:.4rem 0 .35rem;font-size:1.05rem}
+    .service ul{margin-left:1rem;color:var(--muted)}
+    /* ===== Destaque ===== */
+    .highlight{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center}
+    .highlight .point{display:flex;align-items:flex-start;gap:.75rem}
+    .highlight .point i{width:26px;height:26px;display:inline-grid;place-items:center;background:var(--ok);color:#fff;border-radius:.5rem;font-style:normal}
+    /* ===== Depoimentos / Portfólio ===== */
+    .testis{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .t{display:flex;flex-direction:column;gap:.6rem}
+    .t .who{font-weight:600}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery .g{border-radius:.6rem;overflow:hidden;border:1px solid var(--line)}
+    /* ===== Rodapé ===== */
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.95rem}
+    .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.5rem}
+    .foot a{color:inherit}
+    /* ===== Responsivo ===== */
+    @media (max-width: 980px){
+      .hero,.highlight{grid-template-columns:1fr}
+      .services{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .foot{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .services{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .cta{display:none} /* CTA principal fica no hero para mobile */
+    }
+  </style>
+
+  <!-- ============ JSON-LD (LocalBusiness + FAQ) ============ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"Inovação Vidros",
+    "image":"https://inovacaovidros.com.br/assets/logo.png",
+    "url":"https://inovacaovidros.com.br/",
+    "telephone":"+55-15-99154-5445",
+    "email":"inovacao.vidros@hotmail.com",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Rua Picolomo Cataldo, 285",
+      "addressLocality":"Sorocaba",
+      "addressRegion":"SP",
+      "postalCode":"18103-540",
+      "addressCountry":"BR"
+    },
+    "areaServed":"Sorocaba, SP",
+    "foundingDate":"2012-01-10",
+    "slogan":"Box de banheiro com instalação profissional e manutenção rápida",
+    "priceRange":"$$",
+    "makesOffer":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manutenção de box de banheiro"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Venda e instalação de box de banheiro"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Troca de roldanas e ferragens"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vedações, borrachas e ajustes de portas"}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Atendem manutenção de box de vidro?","acceptedAnswer":{"@type":"Answer","text":"Sim. Executamos manutenção completa de box de banheiro: troca de roldanas, roldanas de inox, ajustes de portas, vedações e substituição de borrachas."}},
+      {"@type":"Question","name":"Fazem venda e instalação de box novo?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com box de vidro temperado, medição no local e instalação profissional seguindo normas técnicas."}},
+      {"@type":"Question","name":"Qual o prazo para atendimento?","acceptedAnswer":{"@type":"Answer","text":"Atendimentos de manutenção costumam ocorrer em até 48h úteis, conforme agenda e região."}}
+    ]
+  }
+  </script>
+</head>
+<body class="no-js" data-whatsapp="5515991545445">
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- Troque pelo seu logo real -->
+        <img src="assets/logo.png" alt="Inovação Vidros — logomarca" width="84" height="84" decoding="async">
+        <div>
+          <strong>Inovação Vidros</strong><br>
+          <span class="muted">Box de banheiro • Manutenção • Instalação</span>
+        </div>
+      </div>
+      <div class="cta">
+        <a href="#orcamento" class="btn" aria-label="Solicitar orçamento no WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.55.03.22 5.37.24 11.88a11.66 11.66 0 0 0 1.54 5.82L0 24l6.45-1.69a11.87 11.87 0 0 0 5.64 1.44h.01c6.51 0 11.84-5.34 11.86-11.85a11.81 11.81 0 0 0-3.44-8.42ZM12.1 21.8h-.01a9.88 9.88 0 0 1-5.03-1.38l-.36-.21-3.83 1 1.02-3.73-.24-.38a9.87 9.87 0 0 1-1.53-5.34c-.03-5.44 4.4-9.88 9.84-9.9h.04c2.63 0 5.1 1.03 6.96 2.9a9.79 9.79 0 0 1 2.88 6.96c-.03 5.45-4.46 9.88-9.92 9.88Zm5.67-7.32c-.31-.16-1.85-.91-2.14-1.01-.28-.1-.49-.16-.69.16-.2.31-.79 1.01-.98 1.22-.18.2-.36.23-.67.08-.31-.15-1.29-.47-2.45-1.5-.9-.8-1.5-1.79-1.67-2.1-.17-.31-.02-.48.13-.63.13-.13.31-.34.46-.51.15-.17.2-.29.31-.48.1-.2.05-.36-.02-.51-.16-.16-.69-1.67-.95-2.29-.25-.6-.51-.52-.69-.53l-.59-.01c-.2 0-.52.07-.79.36s-1.04 1.02-1.04 2.49 1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.08 4.5.71.31 1.27.49 1.7.63.71.22 1.37.19 1.88.11.57-.09 1.85-.76 2.11-1.49.25-.73.25-1.36.18-1.49-.07-.13-.28-.21-.59-.37Z"/></svg> Solicitar orçamento</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="section">
+    <div class="container hero" id="inicio">
+      <div>
+        <span class="tag pill">Atendimento rápido • Peças originais</span>
+        <h1>Manutenção, venda e instalação de <strong>box de banheiro</strong></h1>
+        <p>Especialistas em vidro temperado com <strong>+10 anos no mercado</strong>. Atendimento em Sorocaba e região com segurança, qualidade e preço justo.</p>
+        <div class="badges">
+          <span class="pill">Orçamento via WhatsApp</span>
+          <span class="pill">Garantia de serviço</span>
+          <span class="pill">Pagamento facilitado</span>
+        </div>
+        <p id="orcamento">
+          <a class="btn js-wa" href="#" rel="noopener" target="_blank">💬 Pedir orçamento no WhatsApp</a>
+        </p>
+        <p class="muted">Resposta rápida. Envie fotos do seu box para agilizar o orçamento.</p>
+      </div>
+      <div class="hero-picture">
+        <!-- Substitua por foto real de instalação/box -->
+        <img src="assets/hero-box.webp" width="960" height="720" alt="Instalação de box de vidro temperado" loading="eager" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" aria-labelledby="servicos">
+    <div class="container">
+      <h2 id="servicos">Serviços principais</h2>
+      <div class="grid services">
+        <article class="card service">
+          <span class="pill">Manutenção</span>
+          <h3>Manutenção de box de banheiro</h3>
+          <p class="muted">Correções rápidas, seguras e com peças de qualidade.</p>
+          <ul>
+            <li>Troca de roldanas, guias e ferragens</li>
+            <li>Alinhamento e ajuste de portas (correr e abrir)</li>
+            <li>Substituição de borrachas e vedações</li>
+            <li>Correção de folgas e ruídos</li>
+          </ul>
+        </article>
+
+        <article class="card service">
+          <span class="pill">Venda & Instalação</span>
+          <h3>Venda e instalação de box</h3>
+          <p class="muted">Projeto sob medida em vidro temperado com acabamento premium.</p>
+          <ul>
+            <li>Medição no local e consultoria de modelo</li>
+            <li>Box de correr, abrir e soluções personalizadas</li>
+            <li>Perfis e ferragens de alta durabilidade</li>
+            <li>Instalação conforme normas técnicas</li>
+          </ul>
+        </article>
+
+        <article class="card service">
+          <span class="pill">Complementares</span>
+          <h3>Serviços relacionados</h3>
+          <p class="muted">Suporte para manter seu box sempre novo.</p>
+          <ul>
+            <li>Substituição de vidros danificados</li>
+            <li>Reaperto e manutenção preventiva</li>
+            <li>Aplicação de silicone e vedação</li>
+            <li>Higienização e revitalização</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUE (PROVAS) -->
+  <section class="section">
+    <div class="container highlight">
+      <div class="point">
+        <i>✓</i>
+        <div>
+          <h3>+10 anos de experiência</h3>
+          <p class="muted">Mais de uma década atendendo com qualidade, cumprindo prazos e garantindo segurança em cada instalação.</p>
+        </div>
+      </div>
+      <div class="point">
+        <i>✓</i>
+        <div>
+          <h3>Atendimento que resolve</h3>
+          <p class="muted">Orçamento pelo WhatsApp com resposta rápida. Envie fotos e receba orientação técnica imediata.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section" aria-labelledby="depoimentos">
+    <div class="container">
+      <h2 id="depoimentos">O que dizem nossos clientes</h2>
+      <div class="grid testis">
+        <figure class="card t">
+          <blockquote>“Serviço rápido e caprichado. Meu box ficou perfeito!”</blockquote>
+          <figcaption class="who">Aline P.</figcaption>
+        </figure>
+        <figure class="card t">
+          <blockquote>“Resolveram o problema das roldanas no mesmo dia. Atendimento nota 10.”</blockquote>
+          <figcaption class="who">Fernando A.</figcaption>
+        </figure>
+        <figure class="card t">
+          <blockquote>“Instalação limpa e com ótimo acabamento. Recomendo.”</blockquote>
+          <figcaption class="who">Magda B.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA / SERVIÇOS EXECUTADOS -->
+  <section class="section" aria-labelledby="galeria">
+    <div class="container">
+      <h2 id="galeria">Serviços executados</h2>
+      <div class="grid gallery">
+        <!-- Substitua por imagens reais (use .webp). Sempre defina width/height. -->
+        <div class="g"><img src="assets/exec-1.webp" width="640" height="480" alt="Box de correr instalado" loading="lazy" decoding="async"></div>
+        <div class="g"><img src="assets/exec-2.webp" width="640" height="480" alt="Troca de roldanas e regulagem" loading="lazy" decoding="async"></div>
+        <div class="g"><img src="assets/exec-3.webp" width="640" height="480" alt="Instalação de box de abrir" loading="lazy" decoding="async"></div>
+        <div class="g"><img src="assets/exec-4.webp" width="640" height="480" alt="Vedação e acabamento do box" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section" aria-labelledby="contato">
+    <div class="container">
+      <h2 id="contato">Peça seu orçamento agora</h2>
+      <p>Atendimento rápido via WhatsApp. Envie fotos do seu box e descreva o que precisa.</p>
+      <p><a class="btn js-wa" href="#" rel="noopener" target="_blank">💬 Pedir orçamento no WhatsApp</a></p>
+      <p class="muted">Telefone: (15) 99154-5445 • E-mail: inovacao.vidros@hotmail.com</p>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container foot">
+      <div>
+        <strong>Inovação Vidros</strong><br>
+        CNPJ: 14.855.264/0001-31 • Sorocaba/SP<br>
+        <span class="muted">© <span id="y"></span> Inovação Vidros. Todos os direitos reservados.</span>
+      </div>
+      <div>
+        <strong>Serviços</strong><br>
+        <a href="#servicos">Manutenção de box</a><br>
+        <a href="#servicos">Venda e instalação</a><br>
+        <a href="#servicos">Peças e ferragens</a>
+      </div>
+      <div>
+        <strong>Contato</strong><br>
+        <a class="js-wa" href="#" rel="noopener" target="_blank">WhatsApp</a><br>
+        <a href="mailto:inovacao.vidros@hotmail.com">E-mail</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ JS MINIFICADO (construção do link de WhatsApp, ano, UX) ============ -->
+  <script>
+  "use strict";(function(){var d=document,b=d.body,w=function(){var n=(b.getAttribute("data-whatsapp")||"").replace(/\D/g,"");if(!n){alert("Defina seu número WhatsApp em data-whatsapp (ex: 55DDDNÚMERO)");return"#"}var msg=encodeURIComponent("Olá! Vim do site e gostaria de um orçamento para box de banheiro.");return "https://wa.me/"+n+"?text="+msg};var as=[].slice.call(d.querySelectorAll(".js-wa"));as.forEach(function(a){a.addEventListener("click",function(e){var u=w();if(u!="#"){a.setAttribute("href",u);a.setAttribute("aria-label","Abrir conversa no WhatsApp");}else{e.preventDefault();}})});d.getElementById("y").textContent=(new Date).getFullYear();d.body.classList.remove("no-js")})();
+  </script>
+
+  <!-- Noscript (fallback simples) -->
+  <noscript><p style="text-align:center">Para orçamento, envie mensagem para nosso WhatsApp.</p></noscript>
+</body>
+</html>
