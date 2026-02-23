@@ -134,8 +134,11 @@
       transform: translateY(0);
     }
     .mobile-link { display:block; padding:0.5rem 0.75rem; color:#374151; border-radius:0.375rem; }
-    .mobile-link.active { background:#fef2f2; color:#7a2d2e; font-weight:600; position:relative; }
-    .mobile-link.active::before { content:''; position:absolute; left:-0.5rem; top:50%; transform:translateY(-50%); width:6px; height:6px; background:#9C3A3B; border-radius:99px; }
+    .mobile-link.active { background:#fef2f2; color:#7a2d2e; font-weight:normal; position:relative; }
+    .mobile-link.active::before { display: none; }
+    /* Desktop nav active link */
+    .nav-link.active { color: #7a2d2e !important; font-weight: normal; position: relative; }
+    .nav-link.active::after { display: none; }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
@@ -154,10 +157,10 @@
         
         <!-- Desktop Nav -->
         <nav class="hidden md:flex space-x-8">
-          <a href="#servicos" class="text-gray-600 hover:text-brand font-medium">Serviços</a>
-          <a href="#diferenciais" class="text-gray-600 hover:text-brand font-medium">Diferenciais</a>
-          <a href="#como-funciona" class="text-gray-600 hover:text-brand font-medium">Como Funciona</a>
-          <a href="#perguntas-frequentes" class="text-gray-600 hover:text-brand font-medium">Dúvidas</a>
+          <a href="#servicos" class="nav-link text-gray-600 hover:text-brand font-medium">Serviços</a>
+          <a href="#diferenciais" class="nav-link text-gray-600 hover:text-brand font-medium">Diferenciais</a>
+          <a href="#como-funciona" class="nav-link text-gray-600 hover:text-brand font-medium">Como Funciona</a>
+          <a href="#perguntas-frequentes" class="nav-link text-gray-600 hover:text-brand font-medium">Dúvidas</a>
         </nav>
 
         <!-- CTA Button & Social -->
@@ -344,7 +347,7 @@
   </div>
 </section>
 <script>
-  (function(){
+  document.addEventListener('DOMContentLoaded', function(){
     const btn = document.getElementById('mobile-menu-button');
     const menu = document.getElementById('mobile-menu');
     const iconOpen = document.getElementById('icon-open');
@@ -366,36 +369,50 @@
     const toggle = () => menu.classList.contains('open') ? closeMenu() : openMenu();
     btn.addEventListener('click', toggle);
 
-    // close when a mobile link is clicked and set active indicator
-    const links = menu.querySelectorAll('.mobile-link');
-    links.forEach(a => {
+    const linksAll = Array.from(document.querySelectorAll('.mobile-link, .nav-link'));
+
+    // attach click handlers
+    linksAll.forEach(a => {
       a.addEventListener('click', (e)=>{
-        // set active class
-        links.forEach(l=> l.classList.remove('active'));
+        // set active across all navs
+        linksAll.forEach(l=> l.classList.remove('active'));
         e.currentTarget.classList.add('active');
-        closeMenu();
+        // small delay to allow anchor jump, then close mobile menu
+        setTimeout(()=> closeMenu(), 50);
       });
     });
 
-    // simple scrollspy to mark active link while scrolling
-    const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    const markActiveOnScroll = () => {
-      const offset = 80; // header offset
-      let current = null;
-      sections.forEach((sec, idx) => {
-        const rect = sec.getBoundingClientRect();
-        if (rect.top - offset <= 0) current = idx;
-      });
-      links.forEach(l=> l.classList.remove('active'));
-      if (current !== null) links[current].classList.add('active');
+    // compute sections after DOM ready
+    let sections = Array.from(document.querySelectorAll('section[id]'));
+
+    const getHeaderOffset = () => {
+      const header = document.querySelector('header');
+      return header ? Math.round(header.getBoundingClientRect().height) : 80;
     };
+
+    const markActiveOnScroll = () => {
+      const offset = getHeaderOffset() + 8;
+      let currentId = null;
+      for (const sec of sections) {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top - offset <= 0 && rect.bottom - offset > 0) { currentId = sec.id; break; }
+      }
+      linksAll.forEach(l=> l.classList.remove('active'));
+      if (currentId) {
+        linksAll.forEach(l=> {
+          if (l.getAttribute('href') === ('#' + currentId)) l.classList.add('active');
+        });
+      }
+    };
+
     window.addEventListener('scroll', markActiveOnScroll, {passive:true});
+    window.addEventListener('resize', ()=>{ sections = Array.from(document.querySelectorAll('section[id]')); markActiveOnScroll(); });
     // initial mark
     markActiveOnScroll();
 
     // close on escape
     document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeMenu(); });
-  })();
+  });
 </script>
     <section id="servicos" class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
