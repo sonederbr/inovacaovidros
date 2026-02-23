@@ -111,6 +111,31 @@
       36% { opacity: 0; transform: scale(1); }
       100% { opacity: 0; transform: scale(1); }
     }
+    
+    /* Mobile menu slide animation and active link styles */
+    #mobile-menu {
+      position: fixed;
+      top: 5rem; /* header height (h-20) */
+      left: 0;
+      right: 0;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transform-origin: top;
+      transform: translateY(-8px);
+      transition: max-height 320ms cubic-bezier(.2,.8,.2,1), opacity 220ms ease, transform 320ms ease;
+      z-index: 60; /* above sticky header (z-50) */
+    }
+    #mobile-menu.open {
+      max-height: 420px; /* enough to show menu items */
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .mobile-link { display:block; padding:0.5rem 0.75rem; color:#374151; border-radius:0.375rem; }
+    .mobile-link.active { background:#fef2f2; color:#7a2d2e; font-weight:600; position:relative; }
+    .mobile-link.active::before { content:''; position:absolute; left:-0.5rem; top:50%; transform:translateY(-50%); width:6px; height:6px; background:#9C3A3B; border-radius:99px; }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
@@ -146,9 +171,26 @@
             Orçamento Rápido
           </a>
         </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden ml-3">
+          <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-brand hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand">
+            <svg id="icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </header>
+
+  <!-- Mobile menu (hidden on desktop) -->
+  <div id="mobile-menu" class="md:hidden bg-white shadow-md w-full z-40 absolute top-16 left-0">
+    <div class="px-4 pt-4 pb-6 space-y-2">
+      <a href="#servicos" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Serviços</a>
+      <a href="#diferenciais" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Diferenciais</a>
+      <a href="#como-funciona" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Como Funciona</a>
+      <a href="#perguntas-frequentes" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Dúvidas</a>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <main class="flex-grow">
@@ -301,6 +343,60 @@
     </div>
   </div>
 </section>
+<script>
+  (function(){
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    if (!btn || !menu) return;
+
+    const openMenu = () => {
+      menu.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+    };
+    const closeMenu = () => {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    };
+    const toggle = () => menu.classList.contains('open') ? closeMenu() : openMenu();
+    btn.addEventListener('click', toggle);
+
+    // close when a mobile link is clicked and set active indicator
+    const links = menu.querySelectorAll('.mobile-link');
+    links.forEach(a => {
+      a.addEventListener('click', (e)=>{
+        // set active class
+        links.forEach(l=> l.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        closeMenu();
+      });
+    });
+
+    // simple scrollspy to mark active link while scrolling
+    const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const markActiveOnScroll = () => {
+      const offset = 80; // header offset
+      let current = null;
+      sections.forEach((sec, idx) => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top - offset <= 0) current = idx;
+      });
+      links.forEach(l=> l.classList.remove('active'));
+      if (current !== null) links[current].classList.add('active');
+    };
+    window.addEventListener('scroll', markActiveOnScroll, {passive:true});
+    // initial mark
+    markActiveOnScroll();
+
+    // close on escape
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeMenu(); });
+  })();
+</script>
     <section id="servicos" class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
