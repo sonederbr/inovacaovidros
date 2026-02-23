@@ -1,14 +1,11 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="sunset">
+<html lang="pt">
 <head>
-  <!-- ============ META BÁSICO / SEO ============ -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Inovação Vidros — Box de Banheiro: Manutenção, Venda e Instalação</title>
-  <meta name="description" content="Box de banheiro com instalação profissional, manutenção rápida e peças originais. Há mais de 10 anos atendendo com qualidade e segurança em Sorocaba e região. Peça seu orçamento no WhatsApp.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inovação Vidros - Vidraçaria Premium em Sorocaba e Região</title>
+  <meta name="description" content="Vidros temperados, box para banheiro, espelhos e envidraçamento de sacadas em Sorocaba. Atendimento rápido via WhatsApp, 14 anos de experiência e garantia. Peça seu orçamento sem compromisso!">
   <link rel="canonical" href="https://inovacaovidros.com.br/">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#0b5d69">
   
   <!-- ============ ICON ============ -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -16,316 +13,633 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- ============ OPEN GRAPH / TWITTER ============ -->
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Inovação Vidros">
-  <meta property="og:title" content="Box de Banheiro: Manutenção, Venda e Instalação">
-  <meta property="og:description" content="Há mais de 10 anos no mercado. Solicite orçamento imediato pelo WhatsApp.">
   <meta property="og:url" content="https://inovacaovidros.com.br/">
-  <meta property="og:image" content="https://inovacaovidros.com.br/assets/og-cover.webp">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="Inovação Vidros - Vidraçaria Premium em Sorocaba">
+  <meta property="og:description" content="Qualidade premium e atendimento personalizado. Reduza o stress da sua obra com nossa agilidade e garantia. 14 anos de mercado.">
+  <meta property="og:image" content="https://inovacaovidros.com.br/assets/logo.png">
 
-  <!-- ======= PREFETCH/CONNECTION HINTS (leve) ======= -->
-  <link rel="dns-prefetch" href="//wa.me">
-  <link rel="preconnect" href="https://wa.me" crossorigin>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://inovacaovidros.com.br/">
+  <meta property="twitter:title" content="Inovação Vidros - Vidraçaria Premium em Sorocaba">
+  <meta property="twitter:description" content="Qualidade premium e atendimento personalizado. Reduza o stress da sua obra com nossa agilidade e garantia.">
+  <meta property="twitter:image" content="https://inovacaovidros.com.br/assets/logo.png">
 
-  <!-- ============ CSS CRÍTICO (com paletas) ============ -->
-  <style>
-    /* =======================
-       PALETAS (DEV ONLY)
-       Altere o atributo data-theme na <html> para: ocean | emerald | sunset | graphite
-       ======================= */
-    :root{
-      --bg: #ffffff; --text:#132024; --muted:#5f7b82; --brand:#0b5d69; --brand-2:#10a6b5; --ok:#1a9c63; --warn:#c97a00; --card:#f5fbfc; --line:#e6f1f3;
-    }
-    html[data-theme="emerald"]{ --bg:#ffffff; --text:#0d1c15; --muted:#4a6b5b; --brand:#106b44; --brand-2:#14b06c; --ok:#108a56; --warn:#b26b00; --card:#f4fbf7; --line:#e6f2ea; }
-    html[data-theme="sunset"]{ --bg:#ffffff; --text:#201513; --muted:#7a5b54; --brand:#b94a2c; --brand-2:#e76f51; --ok:#c0502f; --warn:#b26b00; --card:#fff7f4; --line:#f5e9e5; }
-    html[data-theme="graphite"]{ --bg:#0f1214; --text:#f3f6f7; --muted:#99abb0; --brand:#3fb3c0; --brand-2:#61d0dc; --ok:#14b06c; --warn:#f2a23a; --card:#151a1d; --line:#232b2f; }
-
-    /* ===== Base ===== */
-    *{box-sizing:border-box} html,body{margin:0;padding:0}
-    body{font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;background:var(--bg);color:var(--text)}
-    img{max-width:100%;height:auto;display:block}
-    a{color:var(--brand);text-decoration:none}
-    .container{width:min(1160px,92vw);margin:0 auto}
-    .grid{display:grid;gap:1.25rem}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--brand);color:#fff;padding:.9rem 1.25rem;border-radius:.6rem;font-weight:600;border:none}
-    .btn:hover{background:var(--brand-2)}
-    .pill{display:inline-block;background:var(--card);border:1px solid var(--line);color:var(--muted);padding:.25rem .6rem;border-radius:999px;font-size:.85rem}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:1.2rem}
-    .muted{color:var(--muted)}
-    .section{padding:56px 0}
-    h1,h2{line-height:1.2;margin:.3rem 0 .8rem}
-    h1{font-size:clamp(1.9rem,3.2vw,3rem)}
-    h2{font-size:clamp(1.4rem,2.2vw,2rem)}
-    ul{margin:0 0 0 1.25rem;padding:0}
-    /* ===== Header ===== */
-    header{position:sticky;top:0;background:color-mix(in oklab,var(--bg),transparent 5%);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line);z-index:10}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
-    .brand{display:flex;align-items:center;gap:.75rem}
-    .brand img{width:42px;height:42px;border-radius:.4rem}
-    .brand strong{font-size:1.05rem}
-    .cta{display:flex;gap:.6rem}
-    /* ===== Hero ===== */
-    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center}
-    .hero .tag{margin-bottom:.4rem}
-    .hero p{margin:.6rem 0 1rem}
-    .hero .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.6rem}
-    .hero-picture{position:relative;border-radius:.9rem;overflow:hidden;border:1px solid var(--line);background:linear-gradient(180deg, color-mix(in oklab,var(--brand),#fff 85%), var(--card))}
-    .hero-picture img{object-fit:cover;aspect-ratio:4/3;width:100%;height:100%}
-    /* ===== Serviços ===== */
-    .services{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .service h3{margin:.4rem 0 .35rem;font-size:1.05rem}
-    .service ul{margin-left:1rem;color:var(--muted)}
-    /* ===== Destaque ===== */
-    .highlight{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center}
-    .highlight .point{display:flex;align-items:flex-start;gap:.75rem}
-    .highlight .point i{width:26px;height:26px;display:inline-grid;place-items:center;background:var(--ok);color:#fff;border-radius:.5rem;font-style:normal}
-    /* ===== Depoimentos / Portfólio ===== */
-    .testis{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .t{display:flex;flex-direction:column;gap:.6rem}
-    .t .who{font-weight:600}
-    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
-    .gallery .g{border-radius:.6rem;overflow:hidden;border:1px solid var(--line)}
-    /* ===== Rodapé ===== */
-    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.95rem}
-    .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.5rem}
-    .foot a{color:inherit}
-    /* ===== Responsivo ===== */
-    @media (max-width: 980px){
-      .hero,.highlight{grid-template-columns:1fr}
-      .services{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
-      .foot{grid-template-columns:1fr 1fr}
-    }
-    @media (max-width: 640px){
-      .services{grid-template-columns:1fr}
-      .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .cta{display:none} /* CTA principal fica no hero para mobile */
-    }
-  </style>
-
-  <!-- ============ JSON-LD (LocalBusiness + FAQ) ============ -->
+  <!-- Structured Data for SEO -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"HomeAndConstructionBusiness",
-    "name":"Inovação Vidros",
-    "image":"https://inovacaovidros.com.br/assets/logo.png",
-    "url":"https://inovacaovidros.com.br/",
-    "telephone":"+55-15-99154-5445",
-    "email":"inovacao.vidro@gmail.com",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"Rua Picolomo Cataldo, 285",
-      "addressLocality":"Sorocaba",
-      "addressRegion":"SP",
-      "postalCode":"18103-540",
-      "addressCountry":"BR"
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Inovação Vidros",
+    "description": "Vidraçaria Premium em Sorocaba e Região especializada em vidros temperados, box para banheiro, espelhos e envidraçamento de sacadas.",
+    "url": "https://inovacaovidros.com.br/",
+    "telephone": "+55 15 99154-5445",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sorocaba",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
     },
-    "areaServed":"Sorocaba, SP",
-    "foundingDate":"2012-01-10",
-    "slogan":"Box de banheiro com instalação profissional e manutenção rápida",
-    "priceRange":"$$",
-    "makesOffer":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manutenção de box de banheiro"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Venda e instalação de box de banheiro"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Troca de roldanas e ferragens"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vedações, borrachas e ajustes de portas"}}
-    ]
+    "sameAs": [
+      "https://www.instagram.com/inovacao.vidros/"
+    ],
+    "image": "https://inovacaovidros.com.br/assets/logo.png",
+    "priceRange": "$$",
+    "openingHours": "Mo-Sa 08:00-18:00"
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Atendem manutenção de box de vidro?","acceptedAnswer":{"@type":"Answer","text":"Sim. Executamos manutenção completa de box de banheiro: troca de roldanas, roldanas de inox, ajustes de portas, vedações e substituição de borrachas."}},
-      {"@type":"Question","name":"Fazem venda e instalação de box novo?","acceptedAnswer":{"@type":"Answer","text":"Sim. Trabalhamos com box de vidro temperado, medição no local e instalação profissional seguindo normas técnicas."}},
-      {"@type":"Question","name":"Qual o prazo para atendimento?","acceptedAnswer":{"@type":"Answer","text":"Atendimentos de manutenção costumam ocorrer em até 48h úteis, conforme agenda e região."}}
-    ]
-  }
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#9C3A3B',
+              dark: '#7a2d2e',
+              light: '#c45d5e'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        }
+      }
+    }
   </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    /* Suavizar transições de links globalmente */
+    a { transition: all 0.3s ease-in-out; }
+  </style>
 </head>
-<body class="no-js" data-whatsapp="55015991545445">
-  <!-- HEADER -->
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <!-- Troque pelo seu logo real ocean | emerald | sunset | graphite-->
-        <img src="assets/logo.png" alt="Inovação Vidros — logomarca" width="84" height="84" decoding="async">
-        <div>
-          <strong>Inovação Vidros</strong><br>
-          <span class="muted">Box de banheiro • Manutenção • Instalação</span>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#" class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="Inovação Vidros Logo" class="h-12 w-auto">
+            <span class="hidden md:block font-bold text-xl text-gray-800 tracking-tight">Inovação Vidros</span>
+          </a>
         </div>
-      </div>
-      <div class="cta">
-        <a href="#orcamento" class="btn" aria-label="Solicitar orçamento no WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.55.03.22 5.37.24 11.88a11.66 11.66 0 0 0 1.54 5.82L0 24l6.45-1.69a11.87 11.87 0 0 0 5.64 1.44h.01c6.51 0 11.84-5.34 11.86-11.85a11.81 11.81 0 0 0-3.44-8.42ZM12.1 21.8h-.01a9.88 9.88 0 0 1-5.03-1.38l-.36-.21-3.83 1 1.02-3.73-.24-.38a9.87 9.87 0 0 1-1.53-5.34c-.03-5.44 4.4-9.88 9.84-9.9h.04c2.63 0 5.1 1.03 6.96 2.9a9.79 9.79 0 0 1 2.88 6.96c-.03 5.45-4.46 9.88-9.92 9.88Zm5.67-7.32c-.31-.16-1.85-.91-2.14-1.01-.28-.1-.49-.16-.69.16-.2.31-.79 1.01-.98 1.22-.18.2-.36.23-.67.08-.31-.15-1.29-.47-2.45-1.5-.9-.8-1.5-1.79-1.67-2.1-.17-.31-.02-.48.13-.63.13-.13.31-.34.46-.51.15-.17.2-.29.31-.48.1-.2.05-.36-.02-.51-.16-.16-.69-1.67-.95-2.29-.25-.6-.51-.52-.69-.53l-.59-.01c-.2 0-.52.07-.79.36s-1.04 1.02-1.04 2.49 1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.08 4.5.71.31 1.27.49 1.7.63.71.22 1.37.19 1.88.11.57-.09 1.85-.76 2.11-1.49.25-.73.25-1.36.18-1.49-.07-.13-.28-.21-.59-.37Z"/></svg> Solicitar orçamento</a>
+        
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#services" class="text-gray-600 hover:text-brand font-medium">Serviços</a>
+          <a href="#diferenciais" class="text-gray-600 hover:text-brand font-medium">Diferenciais</a>
+          <a href="#process" class="text-gray-600 hover:text-brand font-medium">Como Funciona</a>
+          <a href="#faq" class="text-gray-600 hover:text-brand font-medium">Dúvidas</a>
+        </nav>
+
+        <!-- CTA Button & Social -->
+        <div class="flex items-center gap-4">
+          <a href="https://www.instagram.com/inovacao.vidros/" target="_blank" class="text-gray-600 hover:text-brand transition-colors hidden sm:block" aria-label="Instagram">
+            <i data-lucide="instagram" class="w-6 h-6"></i>
+          </a>
+          <a href="https://wa.me/5515991545445" target="_blank" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-md text-white bg-brand hover:bg-brand-dark transition-colors shadow-md">
+            <!-- WhatsApp Icon -->
+            <svg class="w-4 h-4 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Orçamento Rápido
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="section">
-    <div class="container hero" id="inicio">
-      <div>
-        <span class="tag pill">Atendimento rápido • Peças originais</span>
-        <h1>Manutenção, venda e instalação de <strong>box de banheiro</strong></h1>
-        <p>Especialistas em vidro temperado com <strong>+10 anos no mercado</strong>. Atendimento em Sorocaba e região com segurança, qualidade e preço justo.</p>
-        <div class="badges">
-          <span class="pill">Orçamento via WhatsApp</span>
-          <span class="pill">Garantia de serviço</span>
-          <span class="pill">Pagamento facilitado</span>
+  <!-- Main Content -->
+  <main class="flex-grow">
+    <section class="relative bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polygon points="50,0 100,0 50,100 0,100" />
+      </svg>
+
+      <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+         
+        </nav>
+      </div>
+
+      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline">Vidros Premium e</span>
+            <span class="block text-[#9C3A3B] xl:inline">Atendimento Ágil</span>
+          </h1>
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            Transforme seu ambiente sem stress. Envie fotos pelo WhatsApp e receba seu orçamento rápido. Mais de 14 anos de excelência em Sorocaba e região.
+          </p>
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a href="https://wa.me/5515991545445" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#9C3A3B] hover:bg-[#7a2d2e] md:py-4 md:text-lg transition-colors duration-200">
+                <svg class="w-5 h-5 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Orçamento via WhatsApp
+              </a>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-3">
+              <a href="#services" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#9C3A3B] bg-red-50 hover:bg-red-100 md:py-4 md:text-lg transition-colors duration-200">
+                Ver Serviços
+              </a>
+            </div>
+          </div>
         </div>
-        <p id="orcamento">
-          <a class="btn js-wa" href="#" rel="noopener" target="_blank">💬 Pedir orçamento no WhatsApp</a>
-        </p>
-        <p class="muted">Resposta rápida. Envie fotos do seu box para agilizar o orçamento.</p>
-      </div>
-      <div class="hero-picture">
-        <!-- Substitua por foto real de instalação/box -->
-        <img src="assets/hero-box.png" width="960" height="720" alt="Instalação de box de vidro temperado" loading="eager" fetchpriority="high">
+      </main>
+    </div>
+  </div>
+  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <img 
+      data-ai="generate" 
+      data-slot="hero-main" 
+      data-prompt="Modern living room with large glass windows and glass coffee table, bright and airy, premium interior design" 
+      data-ar="3:2" 
+      src="images/hero-main.png" 
+      alt="Ambiente moderno com vidros premium" 
+      width="1200" 
+      height="900" 
+      class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full animate-float"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+</section>
+    <section id="diferenciais" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-base font-semibold text-[#9C3A3B] tracking-wide uppercase">Por que escolher a Inovação Vidros?</h2>
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Qualidade e Confiança há mais de 14 anos
+      </p>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+        Nosso foco é reduzir o stress da sua obra com um atendimento personalizado e entrega ágil.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Feature 1 -->
+        <div class="pt-6">
+          <div class="flow-root bg-white rounded-lg px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center p-3 bg-[#9C3A3B] rounded-md shadow-lg">
+                  <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Orçamento Rápido</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Não perca tempo esperando visitas. Envie fotos e medidas aproximadas pelo WhatsApp e receba uma estimativa rápida e precisa.
+              </p>
+              <div class="mt-4 rounded-lg overflow-hidden h-40">
+                 <img 
+                  data-ai="generate" 
+                  data-slot="feature-icon-1" 
+                  data-prompt="Close up of a hand holding a smartphone showing a chat app, fast communication concept" 
+                  data-ar="16:9" 
+                  src="images/feature-1.png" 
+                  alt="Atendimento rápido via WhatsApp" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="pt-6">
+          <div class="flow-root bg-white rounded-lg px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center p-3 bg-[#9C3A3B] rounded-md shadow-lg">
+                  <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Garantia e Qualidade</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Trabalhamos apenas com materiais de primeira linha e oferecemos garantia total na instalação. Sua segurança é nossa prioridade.
+              </p>
+              <div class="mt-4 rounded-lg overflow-hidden h-40">
+                 <img 
+                  data-ai="generate" 
+                  data-slot="feature-icon-2" 
+                  data-prompt="Close up of high quality tempered glass edge and stainless steel fittings, detail shot" 
+                  data-ar="16:9" 
+                  src="images/feature-2.png" 
+                  alt="Qualidade garantida" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="pt-6">
+          <div class="flow-root bg-white rounded-lg px-6 pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center p-3 bg-[#9C3A3B] rounded-md shadow-lg">
+                  <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">14 Anos de Mercado</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Uma trajetória sólida em Sorocaba e região. Conhecemos as necessidades locais e entregamos soluções que valorizam seu imóvel.
+              </p>
+              <div class="mt-4 rounded-lg overflow-hidden h-40">
+                 <img 
+                  data-ai="generate" 
+                  data-slot="feature-icon-3" 
+                  data-prompt="Modern office building facade with glass windows reflecting the sky, symbolizing stability and experience" 
+                  data-ar="16:9" 
+                  src="images/feature-3.png" 
+                  alt="Experiência de mercado" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+    <section id="services" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+        Nossos Serviços Premium
+      </h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+        Soluções completas em vidro para residências e comércios com acabamento impecável.
+      </p>
+    </div>
 
-  <!-- SERVIÇOS -->
-  <section class="section" aria-labelledby="servicos">
-    <div class="container">
-      <h2 id="servicos">Serviços principais</h2>
-      <div class="grid services">
-        <article class="card service">
-          <span class="pill">Manutenção</span>
-          <h3>Manutenção de box de banheiro</h3>
-          <p class="muted">Correções rápidas, seguras e com peças de qualidade.</p>
-          <ul>
-            <li>Troca de roldanas, guias e ferragens</li>
-            <li>Alinhamento e ajuste de portas (correr e abrir)</li>
-            <li>Substituição de borrachas e vedações</li>
-            <li>Correção de folgas e ruídos</li>
-          </ul>
-        </article>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Service 1 -->
+      <div class="group relative">
+        <div class="w-full h-64 bg-gray-200 rounded-2xl overflow-hidden aspect-w-1 aspect-h-1 group-hover:opacity-90 transition-opacity">
+          <img 
+            data-ai="generate" 
+            data-slot="service-box" 
+            data-prompt="Modern bathroom glass shower cabin, elegant design, clean interior" 
+            data-ar="3:4" 
+            src="images/service-1.png" 
+            alt="Box de Banheiro" 
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-gray-900">
+          Box de Banheiro
+        </h3>
+        <p class="mt-1 text-sm text-gray-500">Elegância, segurança e vedação perfeita para seu banho.</p>
+      </div>
 
-        <article class="card service">
-          <span class="pill">Venda & Instalação</span>
-          <h3>Venda e instalação de box</h3>
-          <p class="muted">Projeto sob medida em vidro temperado com acabamento premium.</p>
-          <ul>
-            <li>Medição no local e consultoria de modelo</li>
-            <li>Box de correr, abrir e soluções personalizadas</li>
-            <li>Perfis e ferragens de alta durabilidade</li>
-            <li>Instalação conforme normas técnicas</li>
-          </ul>
-        </article>
+      <!-- Service 2 -->
+      <div class="group relative">
+        <div class="w-full h-64 bg-gray-200 rounded-2xl overflow-hidden aspect-w-1 aspect-h-1 group-hover:opacity-90 transition-opacity">
+          <img 
+            data-ai="generate" 
+            data-slot="service-mirror" 
+            data-prompt="Large wall mirror in a luxury living room, reflecting beautiful decor" 
+            data-ar="3:4" 
+            src="images/service-2.png" 
+            alt="Espelhos Decorativos" 
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-gray-900">
+          Espelhos Decorativos
+        </h3>
+        <p class="mt-1 text-sm text-gray-500">Amplitude e sofisticação para salas, quartos e banheiros.</p>
+      </div>
 
-        <article class="card service">
-          <span class="pill">Complementares</span>
-          <h3>Serviços relacionados</h3>
-          <p class="muted">Suporte para manter seu box sempre novo.</p>
-          <ul>
-            <li>Substituição de vidros danificados</li>
-            <li>Reaperto e manutenção preventiva</li>
-            <li>Aplicação de silicone e vedação</li>
-            <li>Higienização e revitalização</li>
-          </ul>
-        </article>
+      <!-- Service 3 -->
+      <div class="group relative">
+        <div class="w-full h-64 bg-gray-200 rounded-2xl overflow-hidden aspect-w-1 aspect-h-1 group-hover:opacity-90 transition-opacity">
+          <img 
+            data-ai="generate" 
+            data-slot="service-balcony" 
+            data-prompt="Glass balcony glazing system on a modern apartment terrace with city view" 
+            data-ar="3:4" 
+            src="images/service-3.png" 
+            alt="Envidraçamento de Sacadas" 
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-gray-900">
+          Envidraçamento de Sacadas
+        </h3>
+        <p class="mt-1 text-sm text-gray-500">Proteção contra vento e chuva sem perder a vista.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="group relative">
+        <div class="w-full h-64 bg-gray-200 rounded-2xl overflow-hidden aspect-w-1 aspect-h-1 group-hover:opacity-90 transition-opacity">
+          <img 
+            data-ai="generate" 
+            data-slot="service-window" 
+            data-prompt="Modern glass windows and doors in a contemporary house facade" 
+            data-ar="3:4" 
+            src="images/service-4.png" 
+            alt="Janelas e Portas" 
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-gray-900">
+          Janelas e Portas
+        </h3>
+        <p class="mt-1 text-sm text-gray-500">Projetos sob medida em vidro temperado ou laminado.</p>
       </div>
     </div>
-  </section>
 
-  <!-- DESTAQUE (PROVAS) -->
-  <section class="section">
-    <div class="container highlight">
-      <div class="point">
-        <i>✓</i>
+    <div class="mt-12 text-center flex flex-col items-center gap-4">
+      <a href="https://wa.me/5515991545445" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#9C3A3B] hover:bg-[#7a2d2e] md:text-lg transition-colors duration-200">
+        <svg class="w-5 h-5 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Solicitar Orçamento Agora
+      </a>
+      <a href="https://www.instagram.com/inovacao.vidros/" target="_blank" class="inline-flex items-center text-gray-600 hover:text-[#9C3A3B] font-medium transition-colors mt-2">
+        <i data-lucide="instagram" class="w-5 h-5 mr-2"></i>
+        Veja nossa galeria de projetos no Instagram
+      </a>
+    </div>
+  </div>
+</section>
+    <section id="process" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como funciona nosso atendimento</h2>
+      <p class="text-lg text-gray-600">Simplificamos tudo para você. Do primeiro contato à instalação, nosso foco é agilidade e qualidade sem stress.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 relative">
+       <!-- Step 1 -->
+       <div class="relative flex flex-col items-center text-center p-8 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 bg-[#9C3A3B] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+            <i data-lucide="camera" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">1. Envie fotos ou medidas</h3>
+          <p class="text-gray-600">Não perca tempo agendando visitas desnecessárias. Tire uma foto do local ou descreva o que precisa e nos envie pelo WhatsApp.</p>
+       </div>
+       <!-- Step 2 -->
+       <div class="relative flex flex-col items-center text-center p-8 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 bg-[#9C3A3B] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+            <i data-lucide="message-square" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">2. Orçamento Rápido</h3>
+          <p class="text-gray-600">Receba uma estimativa de preço e prazo rapidamente. Nosso atendimento é personalizado e focado na sua necessidade.</p>
+       </div>
+       <!-- Step 3 -->
+       <div class="relative flex flex-col items-center text-center p-8 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-16 h-16 bg-[#9C3A3B] rounded-full flex items-center justify-center text-white mb-6 shadow-lg">
+            <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">3. Instalação Garantida</h3>
+          <p class="text-gray-600">Aprovado o orçamento, executamos o serviço com a qualidade de quem tem mais de 14 anos de mercado em Sorocaba.</p>
+       </div>
+    </div>
+    <div class="mt-12 text-center">
+      <a href="https://wa.me/5515991545445" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-[#9C3A3B] rounded-full hover:bg-[#7a2d2e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9C3A3B] shadow-lg hover:shadow-xl">
+        <svg class="w-5 h-5 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Solicitar Orçamento Agora
+      </a>
+    </div>
+  </div>
+</section>
+    <section id="testimonials" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">O que dizem nossos clientes</h2>
+      <p class="text-lg text-gray-600">Confira a experiência de quem já transformou seu ambiente com a Inovação Vidros em Sorocaba.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Review 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+        <div class="flex items-center mb-6">
+          <img data-ai="generate" data-slot="avatar-1" data-prompt="Portrait of a friendly brazilian woman, smiling, casual professional attire, soft lighting" data-ar="1:1" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='9'></svg>" alt="Cliente Satisfeita" class="w-14 h-14 rounded-full object-cover mr-4 shadow-sm" width="60" height="60" loading="lazy">
+          <div>
+            <h4 class="font-bold text-gray-900">Mariana Costa</h4>
+            <p class="text-sm text-gray-500">Sorocaba, SP</p>
+          </div>
+        </div>
+        <div class="flex text-yellow-400 mb-4">
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        </div>
+        <p class="text-gray-600 italic flex-grow">"O atendimento pelo WhatsApp foi incrível. Mandei a foto do meu banheiro, recebi o orçamento do box rapidinho e a instalação ficou perfeita. Recomendo!"</p>
+      </div>
+      <!-- Review 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+        <div class="flex items-center mb-6">
+          <img data-ai="generate" data-slot="avatar-2" data-prompt="Portrait of a middle-aged man, brazilian, wearing a polo shirt, confident smile" data-ar="1:1" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='9'></svg>" alt="Cliente Satisfeito" class="w-14 h-14 rounded-full object-cover mr-4 shadow-sm" width="60" height="60" loading="lazy">
+          <div>
+            <h4 class="font-bold text-gray-900">Ricardo Almeida</h4>
+            <p class="text-sm text-gray-500">Votorantim, SP</p>
+          </div>
+        </div>
+        <div class="flex text-yellow-400 mb-4">
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        </div>
+        <p class="text-gray-600 italic flex-grow">"Profissionais muito qualificados. Fechei o envidraçamento da sacada e o acabamento ficou de alto padrão. Cumpriram o prazo combinado."</p>
+      </div>
+      <!-- Review 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col">
+        <div class="flex items-center mb-6">
+          <img data-ai="generate" data-slot="avatar-3" data-prompt="Portrait of a young woman architect, professional look, glasses, smiling" data-ar="1:1" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='9'></svg>" alt="Cliente Satisfeita" class="w-14 h-14 rounded-full object-cover mr-4 shadow-sm" width="60" height="60" loading="lazy">
+          <div>
+            <h4 class="font-bold text-gray-900">Fernanda Lima</h4>
+            <p class="text-sm text-gray-500">Sorocaba, SP</p>
+          </div>
+        </div>
+        <div class="flex text-yellow-400 mb-4">
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        </div>
+        <p class="text-gray-600 italic flex-grow">"Gostei muito da praticidade. Não precisei ficar esperando visita técnica só para ter uma ideia de preço. O serviço final ficou lindo."</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="faq" class="py-20 bg-white">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Dúvidas Frequentes</h2>
+      <p class="text-lg text-gray-600">Tire suas dúvidas sobre nossos serviços de vidraçaria.</p>
+    </div>
+    <div class="space-y-4">
+      <!-- FAQ 1 -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition-colors text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+          <span class="font-semibold text-gray-900 text-lg">Vocês atendem quais cidades além de Sorocaba?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform duration-200"></i>
+        </button>
+        <div class="hidden p-6 bg-white border-t border-gray-200 text-gray-600">
+          Atendemos Sorocaba e toda a região próxima, incluindo Votorantim, Itu, Salto e Araçoiaba da Serra. Entre em contato para confirmar sua localidade.
+        </div>
+      </div>
+      <!-- FAQ 2 -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition-colors text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+          <span class="font-semibold text-gray-900 text-lg">Preciso pagar pela visita técnica?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform duration-200"></i>
+        </button>
+        <div class="hidden p-6 bg-white border-t border-gray-200 text-gray-600">
+          Para a maioria dos orçamentos, conseguimos uma estimativa precisa apenas com fotos e medidas enviadas pelo WhatsApp, sem custo. Caso seja necessário uma visita técnica para projetos complexos, combinamos previamente.
+        </div>
+      </div>
+      <!-- FAQ 3 -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition-colors text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+          <span class="font-semibold text-gray-900 text-lg">Qual o prazo de entrega?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform duration-200"></i>
+        </button>
+        <div class="hidden p-6 bg-white border-t border-gray-200 text-gray-600">
+          O prazo varia conforme o tipo de vidro (temperado, laminado, comum) e o serviço. No entanto, nosso diferencial é a agilidade. Ao solicitar o orçamento, já informamos a previsão exata de instalação.
+        </div>
+      </div>
+      <!-- FAQ 4 -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex items-center justify-between p-6 bg-gray-50 hover:bg-gray-100 transition-colors text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+          <span class="font-semibold text-gray-900 text-lg">Quais formas de pagamento vocês aceitam?</span>
+          <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform duration-200"></i>
+        </button>
+        <div class="hidden p-6 bg-white border-t border-gray-200 text-gray-600">
+          Aceitamos cartões de crédito, débito, Pix e transferência bancária. Oferecemos condições facilitadas para garantir que você possa realizar seu projeto.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="py-20 bg-[#9C3A3B] text-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para transformar seu ambiente?</h2>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+      Não perca tempo com visitas desnecessárias. Envie uma foto ou descreva seu projeto agora mesmo e receba um orçamento rápido e personalizado.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="https://wa.me/5515991545445" target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[#9C3A3B] bg-white rounded-full hover:bg-gray-100 transition-colors shadow-lg">
+        <svg class="w-5 h-5 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Orçamento via WhatsApp
+      </a>
+      <a href="mailto:inovacaovidro@gmail.com" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white/10 transition-colors">
+        Enviar E-mail
+      </a>
+    </div>
+    <p class="mt-6 text-sm opacity-80">
+      Atendemos Sorocaba e região • Mais de 14 anos de excelência
+    </p>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Brand Column -->
         <div>
-          <h3>+10 anos de experiência</h3>
-          <p class="muted">Mais de uma década atendendo com qualidade, cumprindo prazos e garantindo segurança em cada instalação.</p>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="https://inovacaovidros.com.br/assets/logo.png" alt="Logo" class="h-10 w-auto brightness-200 grayscale">
+            <span class="text-white font-bold text-lg">Inovação Vidros</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4">
+            Especialistas em vidros temperados e acabamentos premium em Sorocaba. Mais de 14 anos transformando ambientes com qualidade e segurança.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/inovacao.vidros/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="point">
-        <i>✓</i>
+
+        <!-- Quick Links -->
         <div>
-          <h3>Atendimento que resolve</h3>
-          <p class="muted">Orçamento pelo WhatsApp com resposta rápida. Envie fotos e receba orientação técnica imediata.</p>
+          <h3 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Navegação</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-brand transition-colors">Início</a></li>
+            <li><a href="#servicos" class="hover:text-brand transition-colors">Nossos Serviços</a></li>
+            <li><a href="#processo" class="hover:text-brand transition-colors">Como Funciona</a></li>
+            <li><a href="#faq" class="hover:text-brand transition-colors">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Serviços</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-brand transition-colors">Box para Banheiro</a></li>
+            <li><a href="#" class="hover:text-brand transition-colors">Espelhos Decorativos</a></li>
+            <li><a href="#" class="hover:text-brand transition-colors">Envidraçamento de Sacadas</a></li>
+            <li><a href="#" class="hover:text-brand transition-colors">Guarda-Corpos</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Contato</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <i data-lucide="map-pin" class="w-5 h-5 mr-2 text-brand flex-shrink-0"></i>
+              <span>Sorocaba/SP e Região</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="phone" class="w-5 h-5 mr-2 text-brand flex-shrink-0"></i>
+              <a href="tel:+5515991545445" class="hover:text-white">(15) 99154-5445</a>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="mail" class="w-5 h-5 mr-2 text-brand flex-shrink-0"></i>
+              <a href="mailto:inovacaovidro@gmail.com" class="hover:text-white">inovacaovidro@gmail.com</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- DEPOIMENTOS -->
-  <section class="section" aria-labelledby="depoimentos">
-    <div class="container">
-      <h2 id="depoimentos">O que dizem nossos clientes</h2>
-      <div class="grid testis">
-        <figure class="card t">
-          <blockquote>“Serviço rápido e caprichado. Meu box ficou perfeito!”</blockquote>
-          <figcaption class="who">Aline P.</figcaption>
-        </figure>
-        <figure class="card t">
-          <blockquote>“Resolveram o problema das roldanas no mesmo dia. Atendimento nota 10.”</blockquote>
-          <figcaption class="who">Fernando A.</figcaption>
-        </figure>
-        <figure class="card t">
-          <blockquote>“Instalação limpa e com ótimo acabamento. Recomendo.”</blockquote>
-          <figcaption class="who">Magda B.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALERIA / SERVIÇOS EXECUTADOS -->
-  <section class="section" aria-labelledby="galeria">
-    <div class="container">
-      <h2 id="galeria">Serviços executados</h2>
-      <div class="grid gallery">
-        <!-- Substitua por imagens reais (use .webp). Sempre defina width/height. -->
-        <div class="g"><img src="assets/exec-1.png" width="640" height="480" alt="Box de correr instalado" loading="lazy" decoding="async"></div>
-        <div class="g"><img src="assets/exec-2.png" width="640" height="480" alt="Troca de roldanas e regulagem" loading="lazy" decoding="async"></div>
-        <div class="g"><img src="assets/exec-3.png" width="640" height="480" alt="Instalação de box de abrir" loading="lazy" decoding="async"></div>
-        <div class="g"><img src="assets/exec-4.png" width="640" height="480" alt="Vedação e acabamento do box" loading="lazy" decoding="async"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="section" aria-labelledby="contato">
-    <div class="container">
-      <h2 id="contato">Peça seu orçamento agora</h2>
-      <p>Atendimento rápido via WhatsApp. Envie fotos do seu box e descreva o que precisa.</p>
-      <p><a class="btn js-wa" href="#" rel="noopener" target="_blank">💬 Pedir orçamento no WhatsApp</a></p>
-      <p class="muted">Telefone: (15) 99154-5445 • E-mail: inovacaovidro@gmail.com</p>
-    </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer>
-    <div class="container foot">
-      <div>
-        <strong>Inovação Vidros</strong><br>
-        CNPJ: 14.855.264/0001-31 • Sorocaba/SP<br>
-        <span class="muted">© <span id="y"></span> Inovação Vidros. Todos os direitos reservados.</span>
-      </div>
-      <div>
-        <strong>Serviços</strong><br>
-        <a href="#servicos">Manutenção de box</a><br>
-        <a href="#servicos">Venda e instalação</a><br>
-        <a href="#servicos">Peças e ferragens</a>
-      </div>
-      <div>
-        <strong>Contato</strong><br>
-        <a class="js-wa" href="#" rel="noopener" target="_blank">WhatsApp</a><br>
-        <a href="mailto:inovacaovidro@gmail.com">E-mail</a>
+      <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>&copy; 2024 Inovação Vidros. Todos os direitos reservados.</p>
+        <p class="mt-2 md:mt-0">CNPJ: 14.855.264/0001-31</p>
       </div>
     </div>
   </footer>
-
-  <!-- ============ JS MINIFICADO (construção do link de WhatsApp, ano, UX) ============ -->
-  <script>
-  "use strict";(function(){var d=document,b=d.body,w=function(){var n=(b.getAttribute("data-whatsapp")||"").replace(/\D/g,"");if(!n){alert("Defina seu número WhatsApp em data-whatsapp (ex: 55DDDNÚMERO)");return"#"}var msg=encodeURIComponent("Olá! Vim do site e gostaria de um orçamento para box de banheiro.");return "https://wa.me/"+n+"?text="+msg};var as=[].slice.call(d.querySelectorAll(".js-wa"));as.forEach(function(a){a.addEventListener("click",function(e){var u=w();if(u!="#"){a.setAttribute("href",u);a.setAttribute("aria-label","Abrir conversa no WhatsApp");}else{e.preventDefault();}})});d.getElementById("y").textContent=(new Date).getFullYear();d.body.classList.remove("no-js")})();
-  </script>
-
-  <!-- Noscript (fallback simples) -->
-  <noscript><p style="text-align:center">Para orçamento, envie mensagem para nosso WhatsApp.</p></noscript>
 </body>
 </html>
